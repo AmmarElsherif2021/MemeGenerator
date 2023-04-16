@@ -1,0 +1,9 @@
+.nav{
+    background:black;
+    padding: 5px;
+}
+.img{
+    width: 35%;
+    border-radius: 100%;
+    align-items: center;
+}
