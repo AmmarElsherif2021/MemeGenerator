@@ -1,4 +1,41 @@
 .container{
     background:white;
     height:550px;
+    
+}
+.form{
+    justify-content: center;
+    align-items: center;
+   
+    padding: 6px;
+    display: grid;
+    grid-template: 40% 40% / 1fr 1fr;
+    gap: 17px;
+    
+    
+}
+
+.form--inputs {
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    width:30%;
+    border: 1px solid #000000;
+    margin:7px;
+    background-color:wheat;
+}
+.form--btns{
+    justify-content: space-between;
+
+    grid-column:1/-1;
+    margin:4px;
+}
+.form--button {
+    border-color: azure;
+    background:#000000;
+    font-family: "Karla", sans-serif;
+    border-radius: 7px;
+    width:25%;
+    height:40px;
+    margin: 7px;
+    
 }
