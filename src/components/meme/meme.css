@@ -9,30 +9,42 @@
    
     padding: 6px;
     display: grid;
-    grid-template: 40% 40% / 1fr 1fr;
+    grid-template: 40% /  1fr;
     gap: 17px;
     
     
 }
 .inputs-container{
+    margin-top:10%;
     background: brown;
-    width:200%;
-    height:200%;
+    grid-template: 50% /  1fr;
+    width:100%;
+    font-family: "Karla", sans-serif;
     align-self: center;
 }
 .form--inputs {
     font-family: "Karla", sans-serif;
     border-radius: 5px;
-    width:70%;
+    width:30%;
     border: 1px solid #000000;
     margin:7px;
-    background-color:wheat;
+    background-color:rgb(255, 255, 255);
 }
 .form--btns{
     justify-content: space-between;
 
     grid-column:1/-1;
     margin:4px;
+}
+.line-button{
+    border-color: azure;
+    background:#000000;
+    font-family: "Karla", sans-serif;
+    border-radius: 100%;
+    width:40px;
+    height:40px;
+    
+    margin: 7px;
 }
 .form--button {
     border-color: azure;

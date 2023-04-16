@@ -30,11 +30,17 @@ export default function Meme(){
     return(
         
           <div className='container'>
+          
            <form className="form">
            
             <div className='inputs-container'>
-               <button type="button" className="form--button" onClick={handleLine}>add a new line</button>
-               {lines}
+               <h2>Add lines</h2>
+                <div>
+                  <button type="button" className="line-button" onClick={handleLine}>
+                    +
+                  </button>
+                </div>
+                {lines} 
             </div>
            <div className='form--btns'>
             
