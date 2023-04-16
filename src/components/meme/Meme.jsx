@@ -1,15 +1,44 @@
 import React from "react";
+import { useState } from "react";
 import './meme.css'
 export default function Meme(){
+    //add component state
+    const [lines,setLines]=useState([<Input/>])
+
+    //handle new line
+    function handleLine(e){
+        e.preventDefault()
+        
+        if (lines.length<4){
+            setLines([...lines,<Input/>])
+        }else{
+            setLines([<Input/>])
+        }
+        
+    }
+    //handle adding new meme
+    function handleMeme(e){
+        e.preventDefault()
+        console.log('new meme supposed to be added')
+    }
+    //Text input to be added
+    function Input(){
+        return(
+            <input type='text' className="form--input"/>
+        )}
+    //the return of Meme component
     return(
         
           <div className='container'>
            <form className="form">
-           <input type='text' className="form--input"/>
-           <input type='text' className="form--input"/>
+           
+            <div className='inputs-container'>
+               <button type="button" className="form--button" onClick={handleLine}>add a new line</button>
+               {lines}
+            </div>
            <div className='form--btns'>
-           <button className="form--button">add a new line</button>
-           <button className="form--button">get a new meme</button>
+            
+            <button type="button" className="form--button" onClick={handleMeme}>get a new meme</button>
            </div>
            </form>
 
