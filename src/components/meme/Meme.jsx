@@ -40,13 +40,15 @@ export default function Meme(){
                     +
                   </button>
                 </div>
-                {lines} 
+                <div className="lines">{lines}</div>
+                 
             </div>
-           <div className='form--btns'>
-            
-            <button type="button" className="form--button" onClick={handleMeme}>get a new meme</button>
-           </div>
+           
+            <div className='form--btns'> 
+              <button type="button" className="form--button" onClick={handleMeme}>get a new meme</button>
+            </div>
            </form>
+           <div className="meme"></div>
 
           </div>
         
