@@ -8,9 +8,12 @@ export default function Meme(){
     //handle new line
     function handleLine(e){
         e.preventDefault()
-        
+        for(i=0;i<lines.length;i++){
+            console.log(lines[i])
+        }
         if (lines.length<4){
             setLines([...lines,<Input/>])
+
         }else{
             setLines([<Input/>])
         }
